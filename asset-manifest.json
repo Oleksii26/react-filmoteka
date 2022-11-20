@@ -1,13 +1,32 @@
 {
   "files": {
     "main.css": "/react-filmoteka/static/css/main.7acaea2f.css",
-    "main.js": "/react-filmoteka/static/js/main.07d3183d.js",
+    "main.js": "/react-filmoteka/static/js/main.75ce491c.js",
+    "static/css/577.f0b28811.chunk.css": "/react-filmoteka/static/css/577.f0b28811.chunk.css",
+    "static/js/577.a1d086a5.chunk.js": "/react-filmoteka/static/js/577.a1d086a5.chunk.js",
+    "static/js/842.eaff5712.chunk.js": "/react-filmoteka/static/js/842.eaff5712.chunk.js",
+    "static/js/587.b7bc3a0f.chunk.js": "/react-filmoteka/static/js/587.b7bc3a0f.chunk.js",
+    "static/css/270.31d6cfe0.chunk.css": "/react-filmoteka/static/css/270.31d6cfe0.chunk.css",
+    "static/js/270.153f09db.chunk.js": "/react-filmoteka/static/js/270.153f09db.chunk.js",
+    "static/css/463.6d321ba3.chunk.css": "/react-filmoteka/static/css/463.6d321ba3.chunk.css",
+    "static/js/463.a0f82027.chunk.js": "/react-filmoteka/static/js/463.a0f82027.chunk.js",
+    "static/js/716.cc3c097e.chunk.js": "/react-filmoteka/static/js/716.cc3c097e.chunk.js",
+    "static/js/317.d2115055.chunk.js": "/react-filmoteka/static/js/317.d2115055.chunk.js",
     "index.html": "/react-filmoteka/index.html",
     "main.7acaea2f.css.map": "/react-filmoteka/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/react-filmoteka/static/js/main.07d3183d.js.map"
+    "main.75ce491c.js.map": "/react-filmoteka/static/js/main.75ce491c.js.map",
+    "577.f0b28811.chunk.css.map": "/react-filmoteka/static/css/577.f0b28811.chunk.css.map",
+    "577.a1d086a5.chunk.js.map": "/react-filmoteka/static/js/577.a1d086a5.chunk.js.map",
+    "842.eaff5712.chunk.js.map": "/react-filmoteka/static/js/842.eaff5712.chunk.js.map",
+    "587.b7bc3a0f.chunk.js.map": "/react-filmoteka/static/js/587.b7bc3a0f.chunk.js.map",
+    "270.153f09db.chunk.js.map": "/react-filmoteka/static/js/270.153f09db.chunk.js.map",
+    "463.6d321ba3.chunk.css.map": "/react-filmoteka/static/css/463.6d321ba3.chunk.css.map",
+    "463.a0f82027.chunk.js.map": "/react-filmoteka/static/js/463.a0f82027.chunk.js.map",
+    "716.cc3c097e.chunk.js.map": "/react-filmoteka/static/js/716.cc3c097e.chunk.js.map",
+    "317.d2115055.chunk.js.map": "/react-filmoteka/static/js/317.d2115055.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.75ce491c.js"
   ]
 }
