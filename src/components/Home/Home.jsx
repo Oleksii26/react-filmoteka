@@ -12,7 +12,7 @@ const Home = () => {
     return <div>
         <h2>Popular Films</h2>
         <ol>
-            {films.map(e => <Link to={`/movies/${e.id}`} state={{ from: `${pathname}${search}` }}><li key={e.id}>{e.title || e.name}</li></Link>)}
+            {films.map((e, i ) => <li key={e.id + i}><Link to={`/movies/${e.id}`} state={{ from: `${pathname}${search}` }}>{e.title || e.name}</Link></li>)}
         </ol>
     </div>
 }

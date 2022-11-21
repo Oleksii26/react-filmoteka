@@ -18,7 +18,7 @@ const MovieDetails = () => {
     return <div>
         <Link onClick={() => navigation(-1)} className={css.link}>◄Back</Link>
         <div className={css.container}>
-            <img src={backdrop_path ? `${IMAGE}${backdrop_path}`:NO_IMAGES} alt={title || name} />
+            <img src={backdrop_path ? `${IMAGE}${backdrop_path}` : NO_IMAGES} alt={title || name} />
             <div>
                 <h2>{title || name}</h2>
                 <p>{`${release_date}`.slice(0, 4) || 'unknown infirmations'}</p>
@@ -32,7 +32,7 @@ const MovieDetails = () => {
         </div>
         <Link to='cast'>Cast</Link>
         <Link to='rewievs'>Rewievs</Link>
-        <Outlet/>
+        <Outlet />
     </div>
 }
 

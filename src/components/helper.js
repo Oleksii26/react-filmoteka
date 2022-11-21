@@ -30,6 +30,16 @@ export const searchCast = async (id) => {
     const { data } = await axios.get(`/movie/${id}/credits?api_key=${API_KEY}`)
     return data 
 }
+//Пошук акторів 
+export const searchRewievs = async (id) => {
+    const { data } = await axios.get(`/movie/${id}/reviews?api_key=${API_KEY}`)
+    return data 
+}
+//Пошук актора
+export const searchPerson = async (id) => {
+    const { data } = await axios.get(`/person/${id}?api_key=${API_KEY}`)
+    return data  
+}
 
 
 
