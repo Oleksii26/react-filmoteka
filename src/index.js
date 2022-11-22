@@ -7,7 +7,7 @@ import  {BrowserRouter}  from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter /* basename="/react-filmoteka/" */>
+    <BrowserRouter basename="/react-filmoteka/">
       <App />
     </BrowserRouter>
   </React.StrictMode>

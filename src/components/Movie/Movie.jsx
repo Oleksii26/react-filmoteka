@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { searchFilmsByName } from '../helper'
 
 const Movie = () => {
+    
+    const location = useLocation()
     const [query, setQuery] = useState('')
     const [films, setFilms] = useState([])
 
@@ -33,7 +35,7 @@ const Movie = () => {
         <button type='submit'>search</button>
     </form>
         <ul>
-            {films.map(e => <li key={e.id}><Link to={`${e.id}`} >{e.title || e.name}</Link></li>)}
+            {films.map(e => <li key={e.id}><Link to={`${e.id}`} state={{from: location}} >{e.title || e.name}</Link></li>)}
         </ul>
     </>
 }

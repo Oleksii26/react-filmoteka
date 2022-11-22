@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, useNavigate, Outlet } from 'react-router-dom'
+import { useParams, useNavigate, Outlet, useLocation } from 'react-router-dom'
 import { searchFilmById } from '../helper'
 import { IMAGE } from '../helper'
 import { Link } from 'react-router-dom'
@@ -8,15 +8,23 @@ import { NO_IMAGES } from '../helper'
 
 
 const MovieDetails = () => {
+    
+    const location = useLocation()
     const navigation = useNavigate()
     const { movieId } = useParams()
     const [films, setFilms] = useState([])
+
     useEffect(() => {
         searchFilmById(movieId).then(data => setFilms(data))
     }, [movieId])
+
+    const onClick = () => {
+        navigation(location.state.from)
+    }
+
     const { backdrop_path, title, name, release_date, genres, overview, production_countries, popularity, vote_average } = films
     return <div>
-        <Link onClick={() => navigation(-1)} className={css.link}>◄Back</Link>
+        <button type='button' onClick={onClick}>◄Back</button>
         <div className={css.container}>
             <img src={backdrop_path ? `${IMAGE}${backdrop_path}` : NO_IMAGES} alt={title || name} />
             <div>
@@ -30,8 +38,8 @@ const MovieDetails = () => {
                 <p>Production countries: {production_countries ? production_countries.map(e => e.name) : 'unknown infirmations'}</p>
             </div>
         </div>
-        <Link to='cast'>Cast</Link>
-        <Link to='rewievs'>Rewievs</Link>
+        <Link to='cast' state={location.state}>Cast</Link>
+        <Link to='rewievs' state={location.state}>Rewievs</Link>
         <Outlet />
     </div>
 }

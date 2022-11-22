@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const Home = () => {
     const [films, setFilms] = useState([])
-    const { pathname, search } = useLocation()
+    const location = useLocation()
     useEffect(() => {
         popularFilms().then(data => setFilms(data.results))
     }, [])
@@ -12,7 +12,7 @@ const Home = () => {
     return <div>
         <h2>Popular Films</h2>
         <ol>
-            {films.map((e, i ) => <li key={e.id + i}><Link to={`/movies/${e.id}`} state={{ from: `${pathname}${search}` }}>{e.title || e.name}</Link></li>)}
+            {films.map((e, i ) => <li key={e.id + i}><Link to={`/movies/${e.id}`} state={{ from: location }}>{e.title || e.name}</Link></li>)}
         </ol>
     </div>
 }
