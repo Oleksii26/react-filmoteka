@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/716.cc3c097e.chunk.js","mappings":"0IAGA,UAHgB,WACZ,OAAO,mCACV,C","sources":["components/Movie/Other/Rewievs.jsx"],"sourcesContent":["const Rewievs = () => {\n    return <h2>Rewievs</h2>\n}\nexport default Rewievs"],"names":[],"sourceRoot":""}

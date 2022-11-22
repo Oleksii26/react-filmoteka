@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_filmoteka=self.webpackChunkreact_filmoteka||[]).push([[716],{716:function(e,t,a){a.r(t);var c=a(184);t.default=function(){return(0,c.jsx)("h2",{children:"Rewievs"})}}}]);
-//# sourceMappingURL=716.cc3c097e.chunk.js.map
